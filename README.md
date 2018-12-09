@@ -16,12 +16,25 @@
 # 2. module
 记录与滑动验证码相关的一些技巧
 ## 2.1 图片合并
+![合并1](readme_images/合并1.png) 加上 ![合并2](readme_images/合并2.png)  
+等于：  
+![合并3](readme_images/合并3.png)
 
 ## 2.2 发现缺口
+![识别前](readme_images/缺口1.jpg)  
+使用图像识别算法发现缺口位置：  
+![识别后](readme_images/缺口2.jpg)
 
 ## 2.3 目标检测
-![识别前](readme_images/点选1.jpg)
-![识别后](readme_images/点选2.jpg)
+![识别前](readme_images/点选1.jpg)  
+识别文字区域：  
+![识别后](readme_images/点选2.jpg)  
+切割文字然后使用分类器识别：
+![切字0](readme_images/点选字0.jpg)
+![切字1](readme_images/点选字1.jpg)
+![切字2](readme_images/点选字2.jpg)
+![切字3](readme_images/点选字3.jpg)
+![切字4](readme_images/点选字4.jpg)
 
 # 3. 说明
 感谢为本项目提供思路的大佬和项目~

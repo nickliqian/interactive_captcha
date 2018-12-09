@@ -7,7 +7,7 @@ def draw(filename, result):
     img = Image.open(filename)
     draw = ImageDraw.Draw(img)
 
-    for r in result:
+    for index, r in enumerate(result):
         # center point is (A, B) 
         A, B, w, h = r
         a = A - (h / 2)
@@ -22,6 +22,8 @@ def draw(filename, result):
         draw.line([(c, d), (c, b)], fill="red")
         draw.line([(c, b), (a, b)], fill="red")
         # break
+        cropedimage = img.crop((a, b, c, d))
+        cropedimage.save("../readme_images/点选字{}.jpg".format(index))
 
     plt.imshow(img)
     plt.show()
